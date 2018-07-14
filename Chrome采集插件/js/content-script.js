@@ -31,6 +31,8 @@ window.addEventListener("message", function(e){
 		}
 		$data["url2"]=url2;
 		if(null!=weight&&weight!=""){
+			$data["spider_url"]=location.href;
+			$data["spider_name"]="1688";
 			$.ajax({
 				type: "POST",
 			    url: "https://www.chhapp.com/product/spider",
